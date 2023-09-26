@@ -1,3 +1,7 @@
+// Creado por: Marco Antonio Rosas Gonzalez
+// Asignatura: Desarrollo Móvil Integral
+// Grado y Grupo: 10°A
+// Docente: Ramírez Hernández Marco Antonio
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -9,7 +13,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   // Estilo de fuente personalizado
   final TextStyle customTextStyle = TextStyle(
-    fontFamily: 'MiFuente', // Nombre de la fuente definido en pubspec.yaml
+    fontFamily: 'si', // Nombre de la fuente definido en pubspec.yaml
     fontSize: 16.0, // Tamaño de fuente deseado
     fontWeight: FontWeight
         .bold, // Puedes ajustar el peso de la fuente según tus preferencias
@@ -21,7 +25,7 @@ class _HomeState extends State<Home> {
     return new Scaffold(
       appBar: new AppBar(
         // Barra de navegación superior (AppBar) con un título y un botón de búsqueda
-        title: new Text("MovieApp-200749"), // Título de la aplicación
+        title: new Text("MovieApp-200749"),titleTextStyle: TextStyle(fontFamily: 'si'), // Título de la aplicación
         backgroundColor: Colors.redAccent,
         actions: <Widget>[
           new IconButton(
@@ -45,9 +49,9 @@ class _HomeState extends State<Home> {
           // Elemento del menú "peliculas"
           new ListTile(
             title: new Text(
-              "peliculas",
-              style:
-                  customTextStyle, // Aplica el estilo de fuente personalizado
+              "Peliculas",
+              style:TextStyle(fontFamily: 'si'),
+                   // Aplica el estilo de fuente personalizado
             ),
             trailing: new Icon(Icons.local_movies), // Icono de películas
           ),
@@ -61,8 +65,8 @@ class _HomeState extends State<Home> {
           new ListTile(
             title: new Text(
               "Television",
-              style:
-                  customTextStyle, // Aplica el estilo de fuente personalizado
+              style:TextStyle(fontFamily: 'si'),
+                   // Aplica el estilo de fuente personalizado
             ),
             trailing: new Icon(Icons.live_tv), // Icono de televisión
           ),
@@ -76,10 +80,10 @@ class _HomeState extends State<Home> {
           new ListTile(
             title: new Text(
               "Cerrar",
-              style:
-                  customTextStyle, // Aplica el estilo de fuente personalizado
+              style:TextStyle(fontFamily: 'si'),
+                   // Aplica el estilo de fuente personalizado
             ),
-            trailing: new Icon(Icons.live_tv), // Icono de televisión
+            trailing: new Icon(Icons.exit_to_app), // Icono de televisión
             onTap: () => Navigator.of(context)
                 .pop(), // Cierra el menú al tocar este elemento
           ),
